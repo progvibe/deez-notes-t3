@@ -12,8 +12,21 @@ const inter = Inter({
 export const metadata = {
   title: "Deez Notes",
   description: "Web based notes app",
-  icons: [{ rel: "icon", url: "/favicon.ico" }],
+  icons: [
+    {
+      rel: "icon",
+      url: "/favicon.ico",
+    },
+  ],
 };
+
+function TopNav() {
+  return (
+    <nav className="flex w-full items-center justify-between">
+      <div>Notes</div>
+    </nav>
+  );
+}
 
 export default function RootLayout({
   children,
